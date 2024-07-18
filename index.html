@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu hình SPA</title>
+
+    <!-- Nhung bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <script src="lib/bootstrap.js"></script>
+
+    <!-- Nhung Icon -->
+    <script src="lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <!-- Nhung AngularJS -->
+    <script src="lib/angular.js"></script>
+
+    <script src="lib/angular-route.js"></script>
+
+
+    <!-- Khu vuc code logic -->
+    <script>
+        var app = angular.module('myApp', ['ngRoute']);
+
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "page/product/trang_chu.html",
+                    controller: "trangchuCtrl"
+                })
+                .when("/trangchu-product", {
+                    templateUrl: "page/product/trang_chu.html",
+                    controller: "trangchuCtrl"
+                })
+                .when("/trangDN-product", {
+                    templateUrl: "page/product/trang_DN.html",
+                    controller: "trangDNCtrl"
+                })
+                .when("/trangDK-product", {
+                    templateUrl: "page/product/trang_DK.html",
+                    controller: "trangDKCtrl"
+                })
+                .when("/trangQLSP_ad-product", {
+                    templateUrl: "page/product/trang_QLSP_ad.html",
+                    controller: "trangQLSPadCtrl"
+                })
+                .when("/deatail-product/:id", {
+                    templateUrl: "page/product/deatail.html",
+                    controller: "deatailCtrl"
+                })
+                .when("/create-product", {
+                    templateUrl: "page/product/create.html",
+                    controller: "createCtrl"
+                })
+                .when("/edit-product/:id", {
+                    templateUrl: "page/product/edit.html",
+                    controller: "editCtrl"
+                })
+                .when("/gio-hang", {
+                    templateUrl: "page/product/trang_GH.html",
+                    controller: "gioHangCtrl"
+                })
+                .when("/xndh", {
+                    templateUrl: "page/product/trang_XNDH.html",
+                    controller: "xndhCtrl"
+                })
+                .when("/qldmsp", {
+                    templateUrl: "page/product/trang_QLDMSP_ad.html",
+                    controller: "qldmspCtrl"
+                })
+
+        })
+
+        app.controller('indexCtrl', function ($scope, $rootScope) {
+            $rootScope.cartNumber = 0;
+
+        })
+
+    </script>
+    
+    <script src="page/product/trang_DN.js"></script>
+    <script src="page/product/trang_DK.js"></script>
+    <script src="page/product/trang_chu.js"></script>
+    <script src="page/product/trang_QLSP_ad.js"></script>
+    <script src="page/product/deatail.js"></script>
+    <script src="page/product/create.js"></script>
+    <script src="page/product/edit.js"></script>
+    <script src="page/product/trang_GH.js"></script>
+    <script src="page/product/trang_XNDH.js"></script>
+    <script src="page/product/trang_QLDMSP_ad.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="indexCtrl">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container">
+            <div class="d-flex align-item-center">
+                <a>
+                    <img src="/img/logo.jpg" style="height: 70px;">
+                </a>
+
+                <ul class="navbar-nav mt-3" style="margin-left: 25px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!trangchu-product">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!trangQLSP_ad-product">Trang quản lý sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!qldmsp">Danh Mục</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-flex" >
+            <ul class="navbar-nav">
+                <li class="nav-item" style="margin-right: 5px;">
+                    <a class="btn btn-light" href="#!trangDK-product">Đăng ký</a>
+                </li>
+                <li class="nav-item" style="margin-right: 5px;">
+                    <a class="btn btn-primary" href="#!trangDN-product">Đăng nhập</a>
+                </li>
+            </ul>
+
+            <a href="#!gio-hang">
+                <button class="btn btn-primary">
+                    Giỏ hàng
+                    <span class="badge bg-danger rounded-pill">{{cartNumber}}</span>
+                </button>
+            </a>
+            
+
+        </div>
+    </nav>
+
+
+    <div ng-view>
+
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p> Nguyễn Danh Huy</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p>Email: huyndph39404@fpt.edu.vn | Điện thoại: 0326546@@@</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

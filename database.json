@@ -1,0 +1,123 @@
+{
+  "user": [
+    {
+      "id": "huynd",
+      "pass": "123456",
+      "name": "Huy",
+      "SDT": "0123456789",
+      "confirmPass": "123456",
+      "role": 1
+    },
+    {
+      "id": "NV01",
+      "pass": "matkhau1",
+      "name": "Huy",
+      "SDT": "0123456788",
+      "confirmPass": "matkhau1",
+      "role": 2
+    },
+    {
+      "id": "maictt",
+      "pass": "matkhau2",
+      "name": "aa",
+      "SDT": "0123456987",
+      "confirmPass": "matkhau2"
+    }
+  ],
+  "danh-muc": [
+    {
+      "id": "DM01",
+      "ten": "Xe Đạp Thể Thao"
+    },
+    {
+      "id": "DM02",
+      "ten": "Xe Đạp Địa Hình"
+    },
+    {
+      "id": "DM03",
+      "ten": "Xe Đạp Fixed"
+    }
+  ],
+  "san-pham": [
+    {
+      "id": "SP01",
+      "ten": "Xe đạp thể thao MTB 750cc",
+      "anh": "img/sanppham5.jpg",
+      "soluong": "11",
+      "giaBan": "400.000 VND",
+      "giaNiemYet": "800.000 VND",
+      "tenDanhMuc": "Xe Đạp Thể Thao",
+      "idDanhMuc": "DM01"
+    },
+    {
+      "id": "SP02",
+      "ten": "Xe đạp thể thao California",
+      "anh": "img/sanpham7.jpg",
+      "giaBan": "500.000 VND",
+      "soluong": "7",
+      "giaNiemYet": "900.000 VND",
+      "tenDanhMuc": "Xe Đạp Thể Thao",
+      "idDanhMuc": "DM01"
+    },
+    {
+      "id": "SP03",
+      "ten": "Xe đạp thể thao MTB 750cc",
+      "anh": "img/sanpham8.jpg",
+      "soluong": "10",
+      "giaBan": "550.000 VND",
+      "giaNiemYet": "950.000 VND",
+      "tenDanhMuc": "Xe Đạp Thể Thao",
+      "idDanhMuc": "DM01"
+    },
+    {
+      "id": "SP04",
+      "ten": "Fujisan F300",
+      "anh": "img/sanpham1.jpg",
+      "soluong": "8",
+      "giaBan": "700.000 VND",
+      "giaNiemYet": "1.200.000 VND",
+      "tenDanhMuc": "Xe Đạp Địa Hình",
+      "idDanhMuc": "DM02"
+    },
+    {
+      "id": "SP05",
+      "ten": "Xe đạp California R680",
+      "anh": "img/sanpham2.jpg",
+      "soluong": "9",
+      "giaBan": "850.000 VND",
+      "giaNiemYet": "1.200.000 VND",
+      "tenDanhMuc": "Xe Đạp Địa Hình",
+      "idDanhMuc": "DM02"
+    },
+    {
+      "id": "SP06",
+      "ten": "Xe đạp Fixed R240 DaNa",
+      "anh": "img/sanpham3.jpg",
+      "soluong": "6",
+      "giaBan": "510.000 VND",
+      "giaNiemYet": "1.100.000 VND",
+      "tenDanhMuc": "Xe Đạp Fixed",
+      "idDanhMuc": "DM03"
+    },
+    {
+      "id": "SP07",
+      "ten": "Xe đạp Fixed Gear S350 DaNa",
+      "anh": "img/sanpham4.jpg",
+      "soluong": "15",
+      "giaBan": "750.000 VND",
+      "giaNiemYet": "1.200.000 VND",
+      "tenDanhMuc": "Xe Đạp Fixed",
+      "idDanhMuc": "DM03"
+    },
+    {
+      "id": "SP08",
+      "ten": "Xe đạp Fixed gear VISP",
+      "anh": "img/sanpham6.jpg",
+      "soluong": "12",
+      "giaBan": "800.000 VND",
+      "giaNiemYet": "1.400.000 VND",
+      "tenDanhMuc": "Xe Đạp Fixed",
+      "idDanhMuc": "DM03"
+    }
+  ]
+}

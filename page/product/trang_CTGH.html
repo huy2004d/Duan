@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chi Tiết Giỏ Hàng</title>
+
+    <!-- Nhúng Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <script src="lib/bootstrap.js"></script>
+
+    <!-- Nhúng Font Icon -->
+    <script src="lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <!-- Nhúng AngularJS -->
+    <!-- <script src="lib/angular.js"></script> -->
+    <!-- <script src="lib/angular-route.js"></script> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light shadow">
+        <div class="container">
+            <!-- hien thi logo va danh muc -->
+            <div class="d-flex align-item-center">
+                <!-- Khu vuc logo -->
+                <a href="">
+                    <img src="img/logo.jpg" style="height: 80px;">
+                </a>
+                <div class="">
+                    <ul class="navbar-nav mt-3" style="margin-left: 40px;">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sản Phẩm</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Links -->
+            </div>
+            <div class="d-flex">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-light rouded-pill " href="#">Đăng ký</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary rouded-pill " href="#">Đăng nhập</button>
+                    </li>
+                </ul>
+                <button class="btn btn-primary position-relative pe-4 pt-2" style="margin-left: 5px;">
+                    <i class="fa-solid fa-cart-shopping fa-xl "></i>
+                    <span class="badge bg-danger rounded-pill 
+                        position-absolute top-0 end-0"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-2" style="min-height: calc(100vh - 130px);">
+
+        <h3 style="margin: 25px;">Giỏ Hàng</h3>
+
+        <table class="table table-bordered table-striped table-hover mt-2">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Số Lượng</th>
+                    <th>Đơn Giá</th>
+                    <th>Thành Tiền</th>
+                    <th>Tương tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SP001</td>
+                    <td>
+                        <div class="border rounded bg-light overflow-hiden d-flex justify-content-center"
+                            style="height: 80px; width: 80px;">
+                            <img src="img/sanpham1.jpg" class="mw-100 mh-100">
+                        </div>
+                    </td>
+                    <td>Fujisan F300</td>
+                    <td>1</td>
+                    <td>25000</td>
+                    <td>25000</td>
+                    <td style="width: 10px;" class="text-nowrap">
+                        <button class="btn btn-danger btn-sm">Xóa</button>
+                </tr>
+
+                <tr>
+                    <td>SP002</td>
+                    <td>
+                        <div class="border rounded bg-light overflow-hiden d-flex justify-content-center align-items-center"
+                            style="height: 80px; width: 80px;">
+                            <img src="img/sanpham2.jpg" class="mw-100 mh-100">
+                        </div>
+                    </td>
+                    <td>Xe đạp California R680</td>
+                    <td>2</td>
+                    <td>30000</td>
+                    <td>60000</td>
+                    <td style="width: 10px;" class="text-nowrap">
+                        <button class="btn btn-danger btn-sm">Xóa</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div class="d-flex">
+            <div class="nav-item" style="margin: 5px;">
+                <button class="btn btn-primary" href="#">Quay lại trang chủ</button>
+            </div>
+            <div class="nav-item" style="margin: 5px;">
+                <button class="btn btn-primary" href="#">Thanh Toán</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Khu Vuc footer -->
+    <div class="bg-light border-top py-3 mt-3">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <span style="color: gray;">Nguyễn Danh Huy_PH39404</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

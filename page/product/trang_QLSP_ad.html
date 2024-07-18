@@ -1,0 +1,66 @@
+<h3>Quản Lý Sản Phẩm</h3>
+
+
+<div class="d-flex justify-content-end">
+    <a href="#!create-product" class="btn btn-success">Tạo mới</a>
+</div>
+
+<table class="table table-bordered table-striped table-hover mt-2">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Số Lượng</th>
+            <th>Danh Mục</th>
+            <th>Đơn Giá</th>
+            <th>Tương tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in listProduct">
+            <td>{{item.id}}</td>
+            <td>
+                <div class="border rounded bg-light overflow-hiden d-flex justify-content-center"
+                    style="height: 80px; width: 80px;">
+                    <img ng-src="{{item.anh}}" class="mw-100 mh-100">
+                </div>
+            </td>
+            <td>{{item.ten}}</td>
+            <td>{{item.soluong}}</td>
+            <td>{{item.tenDanhMuc}}</td>
+            <td>{{item.giaBan}}</td>
+            <td style="width: 1px;" class="text-nowrap">
+
+                <a href="#!deatail-product/{{item.id}}" class="btn btn-primary">Xem</a>
+
+                <a href="#!edit-product/{{item.id}}" class="btn btn-warning">Sửa</a>
+
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal-{{item.id}}">Xóa</button>
+
+                <div class="modal" id="myModal-{{item.id}}">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Xác nhận xóa</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Bạn có chắc chắc muốn xóa: {{item.ten}}
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Hủy</button>
+                                <button class="btn btn-danger" ng-click="OnClickDelete(item.id)">Xác
+                                    nhận xóa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

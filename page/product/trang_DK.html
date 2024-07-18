@@ -1,0 +1,28 @@
+
+<div class="nav flex-column align-items-center  mt-5">
+    <h3>Đăng Ký</h3>
+
+    <ul class="nav flex-column">
+
+        <li class="nav-item mt-3" style="width: 350px;">
+            <input ng-model="user.name" type="text" id="hoTen" class="form-control mt-3" placeholder="Họ Tên">
+        </li>
+        <li class="nav-item">
+            <input ng-model="user.SDT" type="text" id="SDT" class="form-control mt-3" placeholder="Số Điện Thoại">
+        </li>
+        <li class="nav-item">
+            <input ng-model="user.id" type="text" id="Taikhoan" class="form-control mt-3" placeholder="Tài Khoản">
+        </li>
+        <li class="nav-item">
+            <input ng-model="user.pass" type="password" id="matKhau" class="form-control mt-3" placeholder="Mật Khẩu">
+        </li>
+        <li class="nav-item">
+            <input ng-model="user.confirmPass" type="password" id="xacNhanMK" class="form-control mt-3" placeholder="Xác Nhận Mặt Khẩu">
+        </li>
+
+        <button ng-click="onClickCreate()" class="form-contro mt-3 bg-dark text-light">Đăng Ký</button>
+
+    </ul>
+
+    <div class="alert alert-danger mt-3" ng-hide="formHopLe">{{formThongBao}}</div>
+</div>
